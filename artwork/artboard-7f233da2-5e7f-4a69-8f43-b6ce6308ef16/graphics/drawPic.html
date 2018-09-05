@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        canvas{
+            border: 1px solid #ADACB0;
+            display: block;
+            float: left;
+        }
+        img{
+            border: 1px solid #ADACB0;
+            display: block;
+            float: left;
+            margin-left: 400px;
+        }
+        #btn1 {
+            width: 100px;
+            height: 40px;
+            background: grey;
+            border: 1px solid grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="375" height="667">
+        你的浏览器还不支持canvas
+    </canvas>
+    <img id="img" width="375" height="667" usemap="#map"/>
+    <map name="map" id="map"></map>
+    <button id="btn1">Canvas转换png</button>
+</body>
+<script src="jquery.js"></script>
+<script src="drawPic_v5.js"></script>
+</html>
